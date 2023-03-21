@@ -1,3 +1,11 @@
+.pseudo-books {
+    display: flex;
+    align-items: center;
+    color: var(--preto);
+    text-decoration: none;
+}
+
+
 .header__menu-hamburguer {
     width: 24px;
     height: 24px;

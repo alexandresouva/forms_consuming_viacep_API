@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -17,11 +17,11 @@
 
 <body>
 
-    <header class="cabeçalho">
+    <header class="header">
         <div class="container">
             <input type="checkbox" id="menu" class="container__botao">
             <label for="menu" class="container__rotulo">
-                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+                <span class="header__menu-hamburguer container__imagem"></span>
             </label>
             <ul class="lista-menu">
                 <li class="lista-menu__titulo">Categorias</li>
@@ -41,14 +41,17 @@
                     <a href="#" class="lista-menu__link">Design & UX</a>
                 </li>
             </ul>
-            <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
-            <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
+            <a class="pseudo-books container" href="index.html">
+                <img src="img/Logo.svg" alt="Logo da PseudoBooks" class="container__imagem">
+                <h1 class="container__titulo"><b class="container__titulo--negrito">Pseudo</b>Books</h1>
+            </a>
+
         </div>
 
-        <ul class="opções">
-            <input type="checkbox" id="opções-menu" class="opções__botão">
-            <label for="opções-menu" class="opções__rotulo">
-                <li class="opções__item">Categorias</li>
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botão">
+            <label for="opcoes-menu" class="opcoes__rotulo">
+                <li class="opcoes__item">Categorias</li>
             </label>
 
             <ul class="lista-menu">
@@ -69,8 +72,8 @@
                 </li>
             </ul>
 
-            <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
-            <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Minha estante</a></li>
         </ul>
 
         <div class="container">
@@ -102,7 +105,7 @@
 
     <hr>
     <footer class="rodapé">
-        <h2 class="rodapé__titulo">Grupo Alura</h2>
+        <h2 class="rodapé__titulo">PseudoBooks</h2>
         <ul class="lista-rodapé">
             <li class="lista-rodapé__titulo">Educação</li>
             <li class="lista-rodapé__item">
