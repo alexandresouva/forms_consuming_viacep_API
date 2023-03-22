@@ -1,7 +1,9 @@
 'use strict';
+import { maskCEP, maskPhone } from './validateForm.js';
+
 const $cep = document.querySelector('#cep');
-const $phoneNumber = document.querySelector('#telefone');
-const $errorCep = document.querySelector('.erro_cep');
+const $email = document.querySelector('#email');
+const $errorCep = document.querySelector('.erro__msg--cep');
 
 async function searchAddress(cep) {
   try {
@@ -11,12 +13,12 @@ async function searchAddress(cep) {
     if (data.hasOwnProperty('erro')) {
       $errorCep.textContent =
         'CEP não encontrado, confira os números digitados.';
-      // throw Error('CEP inexistente, confira os dados digitados.');
     } else {
       updateAddressInputs(data);
       return data;
     }
   } catch (erro) {
+    console.log(`Erro detectado: ${erro}`);
     clearAddressInputs();
     if ($cep.value.length != 9) {
       $errorCep.textContent = 'O CEP informado precisar ter 8 números.';

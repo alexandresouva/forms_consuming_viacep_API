@@ -94,6 +94,7 @@
             <div class="formulario__campo">
                 <label class="campo__etiqueta" for="email">E-mail</label>
                 <input name="email" id="email" type="email" class="campo__escrita" required />
+                <p class="erro__msg erro__msg--email"></p>
             </div>
 
             <h3 class="principal__subtitulo">Endereço</h3>
@@ -101,7 +102,7 @@
             <div class="formulario__campo">
                 <label class="campo__etiqueta" for="cep">CEP</label>
                 <input name="cep" id="cep" maxlength="9" class="campo__escrita" required />
-                <p class="erro_cep"></p>
+                <p class="erro__msg erro__msg--cep"></p>
             </div>
 
             <div class="formulario__campo">
@@ -250,7 +251,7 @@
             </li>
         </ul>
     </footer>
-    <script src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
 </body>
 
 </html>

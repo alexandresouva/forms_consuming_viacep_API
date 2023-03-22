@@ -59,6 +59,10 @@
     float: right;
 }
 
+.formulario__botao--disabled {
+    background-color:var(--laranja-dark) !important;
+}
+
 .formulario__erro {
     display: flex;
     margin-top: .5em;
@@ -80,7 +84,7 @@
     color: var(--vermelho);
 }
 
-.erro_cep {
+.erro__msg{
     color: var(--vermelho);
     font-size: .8rem;
     line-height: 1rem;
